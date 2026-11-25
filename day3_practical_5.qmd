@@ -30,9 +30,9 @@ knitr::purl("day3_practical_5.qmd")
 
 In this first practical we are going to fit spatial models for 
 
-1. [Areal data](#areal)
-2. [Geostatistical data](#geostat)
-3. [Point-Process Data](#pproc)
+
+1. [Geostatistical data](#geostat)
+2. [Point-Process Data](#pproc)
 
 
 
@@ -44,12 +44,6 @@ You can download the R-script of this practical by clicking the button below:
 {{< downloadthis day3_practical_5.R dname="day3_practical_5.R" label="Download Practical 5 R script" icon="database-fill-down" type="success" >}}
 
 :::
-
-
-## {#areal}
-
-```{r child="practicals/Areal_ex.qmd"}
-```
 
 ## {#geostat}
 

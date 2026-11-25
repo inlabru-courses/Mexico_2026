@@ -1,7 +1,7 @@
 ---
-title: "Welcome"
+title: "INLA and Beyond"
 from: markdown+emoji
-subtitle: "Spatio-temporal models with `inlabru`" 
+subtitle: "Bayesian Hierachihcal modelling with `inlabru`" 
 format:
   revealjs:
     logo:  NTNU_UofG.png
@@ -84,13 +84,33 @@ spatial and spatio-temporal modelling: focus on spatial point processes strong i
 :::
 :::::
 
+## The instructors {.smaller}
+
+::::: columns
+::: {.column width="50%"}
+![](figures/clipboard-1063141760.jpeg){fig-align="center" width="200"}
+
+**Jafet Belmont Osuna**<br> Lecturer in Statistics, [University of Glasgow](https://www.gla.ac.uk/schools/mathematicsstatistics/staff/jafetbelmontosuna/)
+
+Bayesian spatio-temporal modelling of biological communities in changing environments.
+:::
+
+::: {.column width="50%"}
+![](figures/Louise%20picture-crop.jpg){fig-align="center" width="225"}
+
+**Louise Blackman**<br> PhD student, [University of Glasgow](https://www.gla.ac.uk/schools/mathematicsstatistics/staff/louiseblackman/)
+
+Spatio-temporal models with nonlinear SPDEs, for species interactions and invasive-species spread.
+:::
+:::::
+
 ## Share with us your experience
 
 **Join Mentimeter**
 
-![](figures/clipboard-1900829112.png){fig-align="center" width="580"}
+![](figures/clipboard-1900829112.png){fig-align="center" width="384"}
 
-:::{.notes}
+::: notes
 login via http://mentimeter.com/join/universityofglasgow
 :::
 
@@ -99,27 +119,25 @@ login via http://mentimeter.com/join/universityofglasgow
 what is this course about?
 
 ::: incremental
--   introduction to the `inlabru` toolbox
+- introduction to the `inlabru` toolbox
 
--   the philosophy and concepts behind `inlabru`
+- the philosophy and concepts behind `inlabru`
 
--   the scope of `inlabru` – showcase
+- the scope of `inlabru` – showcase
 :::
 
 :::: fragment
 at the end of this course you will:
 
 ::: incremental
--   know basic and increasingly complex syntax structure that you can build on
+- know basic and increasingly complex syntax structure that you can build on
 
--   have an idea of
+- have an idea of
 
-    -   what types of basic and increasingly complex models can be fitted with `inlabru`
+  - what types of basic and increasingly complex models can be fitted with `inlabru`
 
-    -   where to start if you want to fit your own complex models in `inlabru`
+  - where to start if you want to fit your own complex models in `inlabru`
 :::
 ::::
 
-
 # Questions ?
-

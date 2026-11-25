@@ -19,7 +19,8 @@ grouseticks  = grouseticks %>%
   group_by(BROOD, YEAR) %>%
   mutate(ij = cur_group_id()) %>%
   ungroup() %>%
-  mutate(ijk = seq_along(INDEX)) 
+  mutate(ijk = seq_along(INDEX),
+         YEAR = as.factor(YEAR)) 
 
 
 
@@ -27,8 +28,6 @@ grouseticks  = grouseticks %>%
 #| echo: true
 #| eval: false
 
-# bru_options_set(control.compute = list(dic = T, waic = T))
-# 
 # cmp= ~ -1 + year(...) +
 #   height(...) +
 #   brood_year(...) +
@@ -48,15 +47,6 @@ grouseticks  = grouseticks %>%
 fit$summary.fixed
 fit$summary.hyperpar
 
-
-
-## -----------------------------------------------------------------------------
-tidy(fit)
-tidy(fit, "hyperpar")
-
-
-## -----------------------------------------------------------------------------
-glance(fit)
 
 
 ## -----------------------------------------------------------------------------
@@ -109,24 +99,6 @@ fitted_values1 <- predict(fit,
 ggplot(fitted_values1, aes(x = TICKS, y = mean)) +
   geom_abline(slope = 1, intercept = 0, linetype = 2, colour = "grey50") +
   geom_pointrange(aes(ymin = q0.025, ymax =  q0.975),
-                  alpha = 0.4, colour = "#1B4F5E") +
-  labs(x = "Observed ticks", y = "Expected counts") +
-  theme_minimal(base_size = 14)
-
-
-
-## -----------------------------------------------------------------------------
-fitted_values <- augment(
-  fit,
-  data = grouseticks,
-  pred_formula = ~ exp(year + height + brood_year + brood_year_chicken),
-  n_samples = 500L,
-  seed = 1L
-)
-
-ggplot(fitted_values, aes(x = TICKS, y = .fitted)) +
-  geom_abline(slope = 1, intercept = 0, linetype = 2, colour = "grey50") +
-  geom_pointrange(aes(ymin = .fitted_low, ymax = .fitted_high),
                   alpha = 0.4, colour = "#1B4F5E") +
   labs(x = "Observed ticks", y = "Expected counts") +
   theme_minimal(base_size = 14)
