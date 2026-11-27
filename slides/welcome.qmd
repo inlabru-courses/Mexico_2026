@@ -86,23 +86,17 @@ spatial and spatio-temporal modelling: focus on spatial point processes strong i
 
 ## The instructors {.smaller}
 
-::::: columns
-::: {.column width="50%"}
+
 ![](figures/clipboard-1063141760.jpeg){fig-align="center" width="200"}
 
 **Jafet Belmont Osuna**<br> Lecturer in Statistics, [University of Glasgow](https://www.gla.ac.uk/schools/mathematicsstatistics/staff/jafetbelmontosuna/)
 
 Bayesian spatio-temporal modelling of biological communities in changing environments.
-:::
 
-::: {.column width="50%"}
-![](figures/Louise%20picture-crop.jpg){fig-align="center" width="225"}
 
-**Louise Blackman**<br> PhD student, [University of Glasgow](https://www.gla.ac.uk/schools/mathematicsstatistics/staff/louiseblackman/)
 
-Spatio-temporal models with nonlinear SPDEs, for species interactions and invasive-species spread.
-:::
-:::::
+
+
 
 ## Share with us your experience
 

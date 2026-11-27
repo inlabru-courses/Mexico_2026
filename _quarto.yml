@@ -10,7 +10,7 @@ project:
   - slides/slides_3.qmd
   - slides/slides_recap1.qmd
   - slides/slides_geostats.qmd
-  - slides/slides_points.qmd
+  - slides/slides_Model_Comparison.qmd
   - slides/slides_Closing_Remarks.qmd
   - practicals/LMM_ex.qmd
   - practicals/GLMM_fit.qmd
@@ -45,8 +45,8 @@ website:
         href: slides/slides_recap1.qmd
       - text: Session 4 - Geostatistics and the SPDE approach
         href: slides/slides_geostats.qmd
-      - text: Session 5 - Point Processes
-        href: slides/slides_points.qmd
+      - text: Session 5 - Model Comparison
+        href: slides/slides_Model_Comparison.qmd
       - text: Closing Remarks
         href: slides/slides_Closing_Remarks.qmd
     - text: Practicals
@@ -59,8 +59,6 @@ website:
         href: day2_practical_3.qmd
       - text: Practical 4 - Geostatistics
         href: practicals/Geostat_ex.qmd
-      - text: Practical 5 - Point Processes
-        href: day3_practical_5.qmd
     - text: Supplementary Material
       href: INLA_nutshell.qmd
     - text: References
